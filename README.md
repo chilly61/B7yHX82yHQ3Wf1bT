@@ -26,14 +26,12 @@ $$
       GloVe approaches the same problem from an explicitly count-based and global perspective. Rather than predicting context words, it begins by constructing a word–word co-occurrence matrix 
 𝑋, where each entry 𝑋𝑖𝑗 represents how often word 𝑗 appears in the context of word 𝑖. The model then learns word vectors by minimizing a weighted least-squares objective of the form
 
-$$
-J = \sum_{i,j} f(X_{ij})
-\left(
-\mathbf{w}_i^\top \mathbf{\tilde{w}}_j
-+ b_i + \tilde{b}_j
-- \log X_{ij}
-\right)^2
-$$
+      $$ 
+      J = \sum_{i,j} f(X_{ij})
+      \left(
+      \mathbf{w}_i^\top \mathbf{\tilde{w}}_j + b_i + \tilde{b}_j - \log X_{ij}
+      \right)^2
+      $$
 
      Here, the dot product between word vectors is explicitly constrained to approximate the logarithm of co-occurrence counts, and the weighting function 𝑓 controls the influence of rare and frequent pairs.
 
