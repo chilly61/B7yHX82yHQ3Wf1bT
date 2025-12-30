@@ -38,7 +38,8 @@ $$
      The theoretical distinction is crucial: while Word2Vec relies on a neural prediction task to implicitly encode statistics, GloVe directly factorizes a global statistical structure. This makes GloVe embeddings particularly stable and well-aligned with global semantic relationships, but also ties the model to a fixed vocabulary and a precomputed co-occurrence matrix. From a conceptual standpoint, GloVe can be understood as a bridge between classical matrix factorization methods (such as LSA) and neural embeddings.
 
      2.3 FastText
-         fastText extends the Word2Vec framework by changing the fundamental unit of representation. Instead of treating words as atomic symbols, fastText represents each word as a sum of vectors corresponding to its character-level n-grams. Formally, the embedding of a word 𝑤 is defined as:
+
+      fastText extends the Word2Vec framework by changing the fundamental unit of representation. Instead of treating words as atomic symbols, fastText represents each word as a sum of vectors corresponding to its character-level n-grams. Formally, the embedding of a word 𝑤 is defined as:
          
       $$
       \mathbf{v}_w = \sum_{g \in G(w)} \mathbf{z}_g
