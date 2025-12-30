@@ -37,15 +37,15 @@ $$
 
      The theoretical distinction is crucial: while Word2Vec relies on a neural prediction task to implicitly encode statistics, GloVe directly factorizes a global statistical structure. This makes GloVe embeddings particularly stable and well-aligned with global semantic relationships, but also ties the model to a fixed vocabulary and a precomputed co-occurrence matrix. From a conceptual standpoint, GloVe can be understood as a bridge between classical matrix factorization methods (such as LSA) and neural embeddings.
 
-  2.3 FastText
-      fastText extends the Word2Vec framework by changing the fundamental unit of representation. Instead of treating words as atomic symbols, fastText represents each word as a sum of vectors corresponding to its character-level n-grams. Formally, the embedding of a word 𝑤 is defined as:
-      
-   $$
-   \mathbf{v}_w = \sum_{g \in G(w)} \mathbf{z}_g
-   $$
-
-   where 𝐺(𝑤) denotes the set of character n-grams contained in the word and 𝑧𝑔​ is the embedding of an individual n-gram. These word representations are then trained using the same Skip-gram objective as Word2Vec.
-
-The theoretical innovation of fastText is that it factorizes morphology into the embedding space itself. Because words are composed from subword units, the model can generate meaningful vectors for rare words, misspellings, or entirely unseen tokens, as long as their character n-grams were observed during training. This shifts the model from a purely lexical representation to a partially compositional one, at the cost of introducing additional noise when unrelated words share similar character patterns.
+     2.3 FastText
+         fastText extends the Word2Vec framework by changing the fundamental unit of representation. Instead of treating words as atomic symbols, fastText represents each word as a sum of vectors corresponding to its character-level n-grams. Formally, the embedding of a word 𝑤 is defined as:
+         
+      $$
+      \mathbf{v}_w = \sum_{g \in G(w)} \mathbf{z}_g
+      $$
+   
+      where 𝐺(𝑤) denotes the set of character n-grams contained in the word and 𝑧𝑔​ is the embedding of an individual n-gram. These word representations are then trained using the same Skip-gram objective as Word2Vec.
+   
+      The theoretical innovation of fastText is that it factorizes morphology into the embedding space itself. Because words are composed from subword units, the model can generate meaningful vectors for rare words, misspellings, or entirely unseen tokens, as long as their character n-grams were observed during training. This shifts the model from a purely lexical representation to a partially compositional one, at the cost of introducing additional noise when unrelated words share similar character patterns.
 
 From a unifying perspective, Word2Vec can be seen as optimizing a local predictive objective, GloVe as performing a global log-co-occurrence factorization, and fastText as introducing subword-level parameter sharing into a predictive framework. All three models ultimately learn static embeddings, meaning each word is assigned a single vector regardless of context, which reflects their shared limitation and motivates the move toward contextualized representations in more advanced models.
