@@ -10,7 +10,8 @@ Despite this shared foundation, the three models differ significantly in how con
 2. Comparison
 
    2.1 Word2Vec
-       Word2Vec formulates representation learning as a predictive problem. Instead of explicitly constructing a global co-occurrence matrix, it defines an objective that maximizes the likelihood of observing context words given a target word (or vice versa). In the Skip-gram formulation, the optimization objective can be written as
+
+      Word2Vec formulates representation learning as a predictive problem. Instead of explicitly constructing a global co-occurrence matrix, it defines an objective that maximizes the likelihood of observing context words given a target word (or vice versa). In the Skip-gram formulation, the optimization objective can be written as
    
    $$
 \max \sum_{(w,c)\in D} \log P(c \mid w)
