@@ -1,4 +1,4 @@
-# TalentFit: AI-Powered Candidate Ranking and Matching System
+# Potential Talents: AI-Powered Candidate Ranking and Matching System
 
 ## Project Overview
 
