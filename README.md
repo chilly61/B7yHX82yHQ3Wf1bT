@@ -116,24 +116,6 @@ To improve ranking consistency, we adopted pairwise comparison methods: instead 
 
 ---
 
-## Quick Start
-
-### Environment Setup
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd Apziva-Project-C
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
 ### Main Script Description
 
 | Script | Function Description |
@@ -246,25 +228,3 @@ Apziva-Project-C/
 Thanks to the Apziva team for their support and guidance.
 
 ---
-
-## License
-
-This project is for internal use only.
-
----
-
-## References
-
-1. Mikolov, T., et al. (2013). Efficient Estimation of Word Representations in Vector Space. *ICLR*.
-
-2. Pennington, J., et al. (2014). GloVe: Global Vectors for Word Representation. *EMNLP*.
-
-3. Bojanowski, P., et al. (2017). Enriching Word Vectors with Subword Information. *TACL*.
-
-4. Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP*.
-
-5. Hu, E. J., et al. (2021). LoRA: Low-Rank Adaptation of Large Language Models. *ICLR*.
-
-6. Dettmers, T., et al. (2023). QLoRA: Efficient Finetuning of Quantized LLMs. *arXiv*.
-
-7. Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive Tasks. *arXiv*.
