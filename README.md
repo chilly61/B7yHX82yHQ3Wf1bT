@@ -128,24 +128,6 @@ To improve ranking consistency, we adopted pairwise comparison methods: instead 
 | `RAG.ipynb` | Retrieval-Augmented Generation implementation |
 | `RAG_Score.ipynb` | Pairwise ranking score optimization |
 
-### Usage Example
-
-```python
-from candidate_ranking import CandidateRanker
-
-# Initialize ranker (using SBERT model)
-ranker = CandidateRanker(model='sbert')
-
-# Define target position
-target_keywords = "Aspiring human resources"
-
-# Rank candidates
-ranked_candidates = ranker.rank(candidates_df, target_keywords)
-
-# Print top 10 candidates
-print(ranked_candidates.head(10))
-```
-
 ---
 
 ## Performance Evaluation
