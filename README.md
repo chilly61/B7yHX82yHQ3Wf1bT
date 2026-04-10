@@ -34,10 +34,8 @@ pip install -r requirements.txt
 ### 2. Data Exploration
 python EDA.py
 
-![general](EDA/general.png)
-![connection](EDA/connection.png)
-![job](EDA/job3.png)
-![location](EDA/loc2.png)
+![EDA](EDA/C1.png)
+
 ### 3. Run Notebooks (Recommended: Google Colab)
 Notebook
 TF-IDF Baseline
