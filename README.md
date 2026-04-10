@@ -201,6 +201,7 @@ Multi-modal fusion will be an important next direction, integrating more candida
 ```
 Apziva-Project-C/
 ├── EDA.py                    # Exploratory Data Analysis
+├── EDA/                      # EDA results visualization
 ├── TF-IDF.py                 # TF-IDF Baseline Matching
 ├── Prompt_only.ipynb         # LLM Prompt Engineering
 ├── Lora.ipynb               # LoRA Fine-tuning
