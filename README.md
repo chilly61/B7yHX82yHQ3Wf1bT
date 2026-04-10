@@ -30,8 +30,10 @@ The system supports flexible switching between multiple matching algorithms, fro
 ### 1. Environment Setup
 
 pip install -r requirements.txt
+
 ### 2. Data Exploration
 python EDA.py
+
 ### 3. Run Notebooks (Recommended: Google Colab)
 Notebook
 TF-IDF Baseline
@@ -42,6 +44,7 @@ RAG
 RAG_Score
 ### 4. Run Locally
 python TF-IDF.py
+
 ---
 
 ## Technical Architecture
