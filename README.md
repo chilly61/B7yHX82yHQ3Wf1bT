@@ -208,8 +208,7 @@ Apziva-Project-C/
 ├── RAG.ipynb                # Retrieval-Augmented Generation
 ├── RAG_Score.ipynb          # Pairwise Ranking Scoring
 ├── README.md                # Project Documentation
-├── requirements.txt         # Dependency List
-└── images/                  # Documentation Images
+└── requirements.txt         # Dependency List
 ```
 
 ---
