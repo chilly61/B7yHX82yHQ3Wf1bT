@@ -28,11 +28,11 @@ The system supports flexible switching between multiple matching algorithms, fro
 
 ## Quick Start
 ### 1. Environment Setup
-```bash
+
 pip install -r requirements.txt
-2. Data Exploration
+### 2. Data Exploration
 python EDA.py
-3. Run Notebooks (Recommended: Google Colab)
+### 3. Run Notebooks (Recommended: Google Colab)
 Notebook
 TF-IDF Baseline
 Prompt_only
@@ -41,7 +41,6 @@ QLoRA
 RAG
 RAG_Score
 ### 4. Run Locally
-```bash
 python TF-IDF.py
 ---
 
