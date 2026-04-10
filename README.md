@@ -230,6 +230,11 @@ Apziva-Project-C/
 
 ---
 
+## License
+
+MIT
+
+---
 ## Contributors
 
 Thanks to the Apziva team for their support and guidance.
